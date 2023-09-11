@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 892bbcefb23335d438befe35562b25ae
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - _rb: {instanceID: 0}
+  - _character: {instanceID: 0}
+  - _impact: {fileID: 5024009746357069192, guid: 631bbcdf4f0700c40b4ec341e742dc6e,
+      type: 3}
+  - _BloodSplash: {fileID: 3548588485384254794, guid: 8e3b70feafc74a545addff127665675b,
+      type: 3}
+  executionOrder: 500
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

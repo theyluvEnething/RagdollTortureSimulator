@@ -1,0 +1,58 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Movable
+  - Invisible
+  - Placeable
+  - EnableRagdoll
+  - Placeholder
+  - Background
+  - Item
+  - Ground
+  - ItemTruck
+  - Target
+  - FxTemporaire
+  - BlueOutline
+  - OrangeOutline
+  - Clickable
+  - IgnorePush
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Invisible
+  - Water
+  - UI
+  - Background
+  - Ground
+  - Movable
+  - Item
+  - Overlay
+  - 
+  - 
+  - 
+  - 
+  - 
+  - Skin Room
+  - Underground Room
+  - Event Room
+  - Shop
+  - Exit Sign
+  - 
+  - Desert
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
