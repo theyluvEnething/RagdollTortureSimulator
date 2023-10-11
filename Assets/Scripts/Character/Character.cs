@@ -77,7 +77,7 @@ public class Character : MonoBehaviour
 
         health -= amount;
         _healthbar.UpdateHealthBar(health, MAX_HEALTH);
-        int cash = 5 * ((int) Random.Range(1, Mathf.Clamp(Mathf.Round(amount / 50)/2, 1, Mathf.Infinity))); 
+        int cash =  10 * ((int) Random.Range(1, Mathf.Clamp(Mathf.Round(amount / 50)/2, 1, Mathf.Infinity))); 
         GameManager.Instance.addCash(cash);
     }
     public void Damage(int amount, bool blood)
@@ -89,7 +89,7 @@ public class Character : MonoBehaviour
 
         health -= amount;
         _healthbar.UpdateHealthBar(health, MAX_HEALTH);
-        int cash = 5 * ((int)Random.Range(1, Mathf.Clamp(Mathf.Round(amount / 50) / 2, 1, Mathf.Infinity)));
+        int cash = 10 * ((int)Random.Range(1, Mathf.Clamp(Mathf.Round(amount / 50) / 2, 1, Mathf.Infinity)));
         GameManager.Instance.addCash(cash);
     }
     public void Kill()

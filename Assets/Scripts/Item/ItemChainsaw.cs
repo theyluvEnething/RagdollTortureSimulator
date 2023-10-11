@@ -27,11 +27,11 @@ public class ItemChainsaw : Item
         if (collision.transform.CompareTag("Player")) {
             _character.Damage(25);
 
-            if (effectTimer <= 0)
-            {
-                Instantiate(_sparks, _chainsawBlade.position, _chainsawBlade.rotation);
-                effectTimer = EFFECT_TIMER;
-            }
+            //if (effectTimer <= 0)
+            //{
+            //    Instantiate(_sparks, _chainsawBlade.position, _chainsawBlade.rotation);
+            //    effectTimer = EFFECT_TIMER;
+            //}
         }
     }
 }

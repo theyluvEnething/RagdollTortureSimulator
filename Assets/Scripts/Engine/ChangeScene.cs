@@ -9,12 +9,14 @@ public class ChangeScene : MonoBehaviour
     [SerializeField] private Transform _MainRoom;
     [SerializeField] private Transform _ShopRoom;
     [SerializeField] private Transform _SkinRoom;
+    [SerializeField] private Transform _ExtraRoom;
     [SerializeField] private Transform _Desert;
     [SerializeField] private Transform _Aquarium;
     [SerializeField] private Transform _Items;
 
     [Header("FORCE-CAMERAS")]
     [SerializeField] private MoveCamera _DesertCamera;
+    [SerializeField] private MoveCamera _SkinCamera;
 
     [Header("SETTINGS")]
     [SerializeField] public SceneState sceneState;
@@ -35,6 +37,7 @@ public class ChangeScene : MonoBehaviour
         MainRoomActive,
         ShopRoomActive,
         SkinRoomActive,
+        ExtraRoomActive,
         DesertActive,
         AquariumActive,
         WaitForNewScene,
@@ -206,6 +209,10 @@ public class ChangeScene : MonoBehaviour
         coroutineIsRunning = false;
         sceneState = SceneState.WaitForNewScene;
         inTransition = false;
+
+        sceneState = SceneState.ShopRoomActive;
+        yield return new WaitForSeconds(0.75f);
+        _SkinCamera.ForceMove();
     }
     private IEnumerator AquariumBehaviour()
     {
