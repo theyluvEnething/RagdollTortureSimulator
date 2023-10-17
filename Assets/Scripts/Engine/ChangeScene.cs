@@ -9,7 +9,6 @@ public class ChangeScene : MonoBehaviour
     [SerializeField] private Transform _MainRoom;
     [SerializeField] private Transform _ShopRoom;
     [SerializeField] private Transform _SkinRoom;
-    [SerializeField] private Transform _ExtraRoom;
     [SerializeField] private Transform _Desert;
     [SerializeField] private Transform _Aquarium;
     [SerializeField] private Transform _Items;
@@ -37,7 +36,6 @@ public class ChangeScene : MonoBehaviour
         MainRoomActive,
         ShopRoomActive,
         SkinRoomActive,
-        ExtraRoomActive,
         DesertActive,
         AquariumActive,
         WaitForNewScene,
