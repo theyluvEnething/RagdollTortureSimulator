@@ -10,7 +10,7 @@ public class DataPersistenceManager : MonoBehaviour
     [Header("FILE STORAGE CONFIG")]
     [SerializeField] private string fileName;
 
-    [SerializeField] private bool useEncryption;
+    private const bool useEncryption = false;
 
     private GameData gameData;
     private List<IDataPersistence> dataPersistenceObjects;
@@ -26,7 +26,6 @@ public class DataPersistenceManager : MonoBehaviour
     }
     private void OnApplicationQuit()
     {
-        GameManager.Instance.keepItemState = false;
         SaveGame();
     }
 

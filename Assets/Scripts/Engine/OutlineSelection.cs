@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro.Examples;
@@ -27,20 +28,34 @@ public class OutlineSelection : MonoBehaviour
 
         foreach (GameObject obj in outlinedObjects) 
         {
-            Outline outline = obj.AddComponent<Outline>();
-            outline.enabled = true;
-            outline.OutlineWidth = outlineWidth;
+            try
+            {
+                Outline outline;
+                try
+                {
+                    outline = obj.AddComponent<Outline>();
+                }
+                catch
+                {
+                    once = true;
+                    return;
+                }
+                outline.enabled = true;
+                outline.OutlineWidth = outlineWidth;
 
-            if (obj.CompareTag("BlueOutline"))
-            {
-                outline.OutlineColor = blueOutline;
+                if (obj.CompareTag("BlueOutline"))
+                {
+                    outline.OutlineColor = blueOutline;
+                }
+                else if (obj.CompareTag("OrangeOutline"))
+                {
+                    outline.OutlineColor = orangeOutline;
+                }
             }
-            else if (obj.CompareTag("OrangeOutline"))
-            {
-                outline.OutlineColor = orangeOutline;
+            catch (Exception e) {
+                Debug.Log(e.Message);
             }
-        }
-        
+        }   
         once = true;
     }
 }

@@ -41,6 +41,7 @@ public class MoveCamera : MonoBehaviour
 
         if (_OnlyExitSign && !_ExitSignOnScreen)
         {
+            Debug.Log(gameObject.name);
             Debug.LogError("Cannot leave this camera scene because there is no exit sign but only exit sign is allowed.");
         }
     }
